@@ -5249,8 +5249,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "app"
 });
@@ -5365,9 +5363,33 @@ __webpack_require__.r(__webpack_exports__);
 var routes = [{
   path: '/',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_Pages_Home_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/Home.vue */ "./resources/js/Pages/Home.vue"));
+    return __webpack_require__.e(/*! import() */ "resources_js_Pages_Auth_Login_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/Auth/Login.vue */ "./resources/js/Pages/Auth/Login.vue"));
   },
-  name: 'index'
+  name: 'login',
+  meta: {
+    "public": true,
+    title: 'Login'
+  }
+}, {
+  path: '/register',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_Pages_Auth_Register_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/Auth/Register.vue */ "./resources/js/Pages/Auth/Register.vue"));
+  },
+  name: 'register',
+  meta: {
+    "public": true,
+    title: 'Register'
+  }
+}, {
+  path: '/dashboard',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_Pages_Dashboard_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/Dashboard.vue */ "./resources/js/Pages/Dashboard.vue"));
+  },
+  name: 'dashboard',
+  meta: {
+    requireAuth: true,
+    title: 'Dashboard'
+  }
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (routes);
 
@@ -28418,12 +28440,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "v-app",
-    { attrs: { app: "" } },
-    [_c("v-container", [_c("router-view")], 1)],
-    1
-  )
+  return _c("div", [_c("router-view")], 1)
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -91391,7 +91408,7 @@ module.exports = JSON.parse('{"_from":"axios@^0.21","_id":"axios@0.21.4","_inBun
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if (chunkId === "resources_js_Pages_Home_vue") return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Pages_Auth_Login_vue":1,"resources_js_Pages_Auth_Register_vue":1,"resources_js_Pages_Dashboard_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

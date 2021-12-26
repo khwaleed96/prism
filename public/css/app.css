@@ -383,14 +383,45 @@ Ensure the default browser behavior of the `hidden` attribute.
 .tw-mr-12 {
   margin-right: 3rem;
 }
-.tw-text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.tw-flex {
+  display: flex;
 }
-.tw-font-bold {
-  font-weight: 700;
+.tw-h-screen {
+  height: 100vh;
 }
-.tw-underline {
-  text-decoration: underline;
+.tw-w-full {
+  width: 100%;
+}
+.tw-items-center {
+  align-items: center;
+}
+.tw-justify-center {
+  justify-content: center;
+}
+.tw-bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+.tw-text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.tw-text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+.tw-text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+.tw-text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+* {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box;
 }
 
